@@ -36,7 +36,7 @@ if int(fuerza + agilidad + mente > 15):
     print("Booooom")
     print("Caes fulminado por un rayo")
     print("Game Over")
-#AVERIGUAR COMO CREAR BUCLE
+#AVERIGUAR COMO CREAR BUCLE PARA INICIAR ESTE
 if int(fuerza + agilidad + mente < 15):
     print("No seas torpe, eso no suma quince, tienes menos puntos de lo normal, restaura y suma bien al añadir tus destrezas")
     print("Game Over")
