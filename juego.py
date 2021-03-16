@@ -1,17 +1,28 @@
+import random
+from random import randint
+bolsa = []
+oficio = ['ladrone', 'Mague', 'Barbare']
+heroe = {oficio : []}
 print("Bienvenido a aventura amateur by charlydersecano")
 print()
 print("En primer lugar elija usted un oficio para el personaje con el que va a vivir esta aventura, entre Ladrone, Mague o Barbare")
-bolsa = []
-oficio = str(input("escriba su oficio: "))
+oficio = input('escriba su oficio: ')
+while oficio != 'Ladrone' or 'Mague' or 'Barbare':
+    print("¿No sabes escribir? Reinicia y elige uno de los tres, que es para hoy")
+    print("Game Over")
+    oficio = input('escriba su oficio: ')
 if (oficio == 'Ladrone'):
     print("Buena elección, el Ladrone, el valiente, el ágil, es el oficio de quienes gustan de moverse entre las sombras")
 elif (oficio == 'Mague'):
     print("Curiosa elección, el Mague no es el más fuerte pero es mentalmente increible, además capaz de lanzar hechizos")
 elif (oficio == 'Barbare'):
     print("Veo que tienes ganas de dar guerra. El barbare es un personaje fuerte y resistente, pocos le superan")
-else :
-    print("¿No sabes escribir? Reinicia y elige uno de los tres, que es para hoy")
-    print("Game Over")
+    # else:
+    # print("¿No sabes escribir? Reinicia y elige uno de los tres, que es para hoy")
+    # print("Game Over")
+    # while oficio != 'Ladrone' or 'Mague' or 'Barbare':
+    #     oficio = str(input ("escriba su oficio: "))
+    #       print('bien sigamos')
     #AVERIGUAR COMO HACER UN BUCLE PARA REINICIARLO
 print()
 print("Dime, persona al otra lado del teclado, ¿Cuál será el nombre de su personaje?")
